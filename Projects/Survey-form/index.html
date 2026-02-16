@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <div class="formm">
+        <form>
+            <!-- Name & Email -->
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <!-- 1. Gender -->
+            <p>1. What is your gender?</p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="prefer_not" name="gender" value="Prefer not to say">
+            <label for="prefer_not">Prefer not to say</label>
+
+            <input type="radio" id="other_gender" name="gender" value="Other">
+            <label for="other_gender">Other</label><br><br>
+
+            <!-- 2. Age -->
+            <label for="age">2. What is your age?</label>
+            <input type="text" id="age" name="age"><br><br>
+
+            <!-- 3. Favourite movie types -->
+            <p>3. What are your favourite types of movies? Select up to 3</p>
+            <input type="checkbox" id="action" name="favourite_movies[]" value="Action and Adventure">
+            <label for="action">Action and Adventure</label>
+
+            <input type="checkbox" id="comedy" name="favourite_movies[]" value="Comedy">
+            <label for="comedy">Comedy</label><br>
+
+            <input type="checkbox" id="drama" name="favourite_movies[]" value="Drama">
+            <label for="drama">Drama</label>
+
+            <input type="checkbox" id="historical" name="favourite_movies[]" value="Historical">
+            <label for="historical">Historical</label><br>
+
+            <input type="checkbox" id="horror" name="favourite_movies[]" value="Horror">
+            <label for="horror">Horror</label>
+
+            <input type="checkbox" id="sci_fi" name="favourite_movies[]" value="Science Fiction">
+            <label for="sci_fi">Science Fiction</label><br>
+
+            <input type="checkbox" id="animation" name="favourite_movies[]" value="Animation">
+            <label for="animation">Animation</label>
+
+            <input type="checkbox" id="romance" name="favourite_movies[]" value="Romance">
+            <label for="romance">Romance</label><br>
+
+            <input type="checkbox" id="other_movie" name="favourite_movies[]" value="Other">
+            <label for="other_movie">Other</label><br><br>
+
+            <!-- 4. Favourite actor -->
+            <label for="actor">4. Who is your favourite actor?</label>
+            <input type="text" id="actor" name="favourite_actor"><br><br>
+
+            <!-- 5. Most important element -->
+            <p>5. What is the most important element for you in a movie?</p>
+            <input type="radio" id="cinematic" name="important_element" value="Cinematic">
+            <label for="cinematic">Cinematic</label>
+
+            <input type="radio" id="content" name="important_element" value="Content">
+            <label for="content">Content</label><br>
+
+            <input type="radio" id="character" name="important_element" value="Characterization">
+            <label for="character">Characterization</label>
+
+            <input type="radio" id="soundtrack" name="important_element" value="Soundtrack">
+            <label for="soundtrack">Soundtrack</label><br>
+
+            <input type="radio" id="other_element" name="important_element" value="Other">
+            <label for="other_element">Other</label><br><br>
+
+            <!-- 6. Favourite place to watch -->
+            <p>6. What is your favourite place to watch a movie?</p>
+            <input type="radio" id="cinema_place" name="watch_place" value="Cinema">
+            <label for="cinema_place">Cinema</label>
+
+            <input type="radio" id="dvd_place" name="watch_place" value="DVD">
+            <label for="dvd_place">DVD</label><br>
+
+            <input type="radio" id="online_place" name="watch_place" value="Online">
+            <label for="online_place">Online</label>
+
+            <input type="radio" id="tv_place" name="watch_place" value="TV">
+            <label for="tv_place">TV</label><br>
+
+            <input type="radio" id="other_place" name="watch_place" value="Other">
+            <label for="other_place">Other</label><br><br>
+
+            <!-- 7. How often -->
+            <p>7. How often do you watch a movie?</p>
+            <input type="radio" id="extremely" name="frequency" value="Extremely often">
+            <label for="extremely">Extremely often</label>
+
+            <input type="radio" id="very" name="frequency" value="Very often">
+            <label for="very">Very often</label><br>
+
+            <input type="radio" id="moderately" name="frequency" value="Moderately often">
+            <label for="moderately">Moderately often</label>
+
+            <input type="radio" id="slightly" name="frequency" value="Slightly often">
+            <label for="slightly">Slightly often</label><br>
+
+            <input type="radio" id="not_at_all" name="frequency" value="Not at all">
+            <label for="not_at_all">Not at all</label><br><br>
+
+            <!-- 8. Who with -->
+            <p>8. Who do you prefer watching movies with? Select up to 2</p>
+            <input type="checkbox" id="alone" name="watch_with[]" value="Alone">
+            <label for="alone">Alone</label>
+
+            <input type="checkbox" id="family" name="watch_with[]" value="Family">
+            <label for="family">Family</label><br>
+
+            <input type="checkbox" id="friends" name="watch_with[]" value="Friends">
+            <label for="friends">Friends</label>
+
+            <input type="checkbox" id="strangers" name="watch_with[]" value="Strangers">
+            <label for="strangers">Strangers</label><br>
+
+            <input type="checkbox" id="other_watch" name="watch_with[]" value="Other">
+            <label for="other_watch">Other</label><br><br>
+
+            <!-- 9. Lead preference -->
+            <p>9. Do you want to see a male or female lead in a movie?</p>
+            <input type="radio" id="female_lead" name="lead_preference" value="Female">
+            <label for="female_lead">Female</label>
+
+            <input type="radio" id="male_lead" name="lead_preference" value="Male">
+            <label for="male_lead">Male</label>
+
+            <input type="radio" id="other_lead" name="lead_preference" value="Other">
+            <label for="other_lead">Other</label><br><br>
+
+            <!-- 10. Favourite movie -->
+            <label for="favourite_movie">10. What is your favourite movie?</label><br>
+            <input type="text" id="favourite_movie" name="favourite_movie"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
 
