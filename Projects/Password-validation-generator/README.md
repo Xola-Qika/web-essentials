@@ -23,5 +23,4 @@ I wanted to practice form validation and user input feedback with JavaScript. It
 
 
 
-- JavaScript
 
