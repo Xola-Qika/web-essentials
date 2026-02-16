@@ -1,4 +1,4 @@
-## My Web Development Journey 🌐
+## My Web Development Journey 
 
 Hi there! I’m Xola, and this is where I share my web development work and experiments.
 
