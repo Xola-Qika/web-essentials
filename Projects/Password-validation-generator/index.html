@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Password Validation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="passwordvalidation.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Register Now</h1>
+        </header>
+        <main>
+            <label for="femail">Email</label>
+            <input type="text" id="femail" name="femail">
+
+            <label for="fpassword">Password</label>
+            <input type="password" id="fpassword" name="fpassword">
+
+            <input type="submit" value="Submit" id="sub">
+        </main>
+    </div>
+
+    <section class="password-rules">
+        <h3>Password must contain the following:</h3>
+        <ul>
+            <li>A lowercase letter</li>
+            <li>An uppercase letter</li>
+            <li>A number</li>
+            <li>Minimum 8 characters</li>
+        </ul>
+    </section>
+
+    <script src="passwordvalidation.js"></script>
+</body>
